@@ -45,3 +45,11 @@ ul {
 .font_size {
     font-size: 18px;
 }
+
+.width_img {
+    width: 250px;
+}
+
+p {
+    margin-bottom: 5px;
+}
