@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/lato_light.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('../fonts/lato_light.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('../fonts/lato_light.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/lato_light.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('../fonts/lato_light.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/lato_light.svg#lato_light') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+
+body {
+    background-color: azure;
+    font-family: 'Lato Light';
+}
+
+h1 {
+    color: orange;
+    font-size: 50px;
+}
+
+h2 {
+    color: rgba(222, 103, 39, 0.75);
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    color: darkred;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.font_size {
+    font-size: 18px;
+}
+
+.width_img {
+    width: 250px;
+}
+
+p {
+    margin-bottom: 5px;
+}
