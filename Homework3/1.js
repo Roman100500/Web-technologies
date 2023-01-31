@@ -1,7 +1,7 @@
-const temperature_celsius = +prompt("Введите температуру по Цельсию:");
+const temperatureCelsius = +prompt("Введите температуру по Цельсию:");
 
-function temperature_fahrenheit(temperaturaC) {
-    return (temperaturaC * (9 / 5) + 32).toFixed(1);
+function temperatureFahrenheit(temperaturaC) {
+    return (temperaturaC * (9 / 5) + 32);
 }
 
-alert(`Цельсий: ${temperature_celsius}, Фаренгейт: ${temperature_fahrenheit(temperature_celsius)}`);
+alert(`Цельсий: ${temperatureCelsius}, Фаренгейт: ${temperatureFahrenheit(temperatureCelsius).toFixed(1)}`);
