@@ -107,20 +107,20 @@ $experience = [
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         <div class="w3-container">
             <?php for ($i = 0; $i<count($experience); $i++): ?>
-          <h5 class="w3-opacity"><b><?php echo $experience[$i]['profession']; ?></b></h5>
-          <h6 class="w3-text-teal">
-            <i class="fa fa-calendar fa-fw w3-margin-right"></i>
-            <?php echo $experience[$i]['startDate']; ?> - 
-            <?php if ($experience[$i]['finalDate'] == 'Current'): ?>
-            <span class="w3-tag w3-teal w3-round">  
+              <h5 class="w3-opacity"><b><?php echo $experience[$i]['profession']; ?></b></h5>
+              <h6 class="w3-text-teal">
+              <i class="fa fa-calendar fa-fw w3-margin-right"></i>
+              <?php echo $experience[$i]['startDate']; ?> - 
+              <?php if ($experience[$i]['finalDate'] == 'Current'): ?>
+                <span class="w3-tag w3-teal w3-round">  
+                  <?php echo $experience[$i]['finalDate']; ?>
+                </span>
+                <?php else: ?>
                 <?php echo $experience[$i]['finalDate']; ?>
-            </span>
-            <?php else: ?>
-                <?php echo $experience[$i]['finalDate']; ?>
-                <?php endif; ?>
-            </h6>
-          <p><?php echo $experience[$i]['textPage']; ?></p>
-          <hr>
+              <?php endif; ?>
+              </h6>
+              <p><?php echo $experience[$i]['textPage']; ?></p>
+              <hr>
           <?php endfor; ?>
         </div>
       </div>

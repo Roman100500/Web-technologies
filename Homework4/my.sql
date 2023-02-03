@@ -23,6 +23,6 @@ INSERT INTO information (name, age, address)
 VALUES ('Tanya', 17, 'Moscow, Russia');
 
 SELECT name FROM information
-WHERE address LIKE '%Moscow%' AND age >= 18 AND age < 30
+WHERE address LIKE '%Moscow%' AND age >= 18 AND age < 30;
 
 -- Делал в http://sqlfiddle.com (MySQL5.6)
