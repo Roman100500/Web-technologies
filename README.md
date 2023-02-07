@@ -1,36 +1,47 @@
-Задача №1: проверить XML на Well formed:
+Формат сдачи ДЗ - один архив, со всеми файлами и скриншотами, либо pull request на github.
 
-<req>
+1. Проверить XML, правильно ли он составлен, не имеет ли он ошибок, если есть какие-либо недочеты, предоставьте правильный вариант в файле 1.xml:
 
-        <surname>Иванов</surname>
+```
 
-        <name>Иван</name>
+<user>
 
-        <patronymic>Иванович</patronymic>
+<name>"Иван"</name>
 
-        <birthdate>01.01.1990</birthdate>
+<surname>"Иванов"</surname>
 
-        <birthplace>Москва</birthplace>
+<patronymic>"Иванович"</patronymic>
 
-        <phone>8 926 766 48 48</phone>
+<age>"30"</age>
 
-</req>
-**Задача №2:** проверить JSON на Well formed:
+<phone>"Москва"</phone>
 
-```json
-{
+<birthplace>"+7 926 766 48 48"</birthplace>
 
-        ""surname"": ""Иванов""
+</user
 
-        ""name"": ""Иван""
+```
 
-        ""patronymic"": ""Иванович""
+2. Проверить JSON, правильно ли он составлен, не имеет ли он ошибок, если есть какие-либо недочеты, предоставьте правильный вариант в файле 2.json:
 
-        ""birthdate"": ""01.01.1990""
+```
 
-        ""birthplace"": ""Москва""
+name: "Иван",
 
-        ""phone"": ""8 926 766 48 48""
+surname: "Иванов",
 
-}
-</aside>
+patronymic: "Иванович",
+
+age: "30",
+
+birthplace: "Москва",
+
+phone: +7 926 766 48 48,
+
+```
+
+Совутую пользоваться парсерами, которые были на семинаре, чтобы проверить что все сделали так, как нужно:
+
+xml-парсер: https://jsonformatter.org/xml-formatter
+
+json-парсер: https://jsonformatter.org/json-parser
